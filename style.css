@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+header{
+
+    position:fixed ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0.3% 0%;
+}
+.logo{
+    height: 15%;
+    width: 15%;
+}
+nav a{
+    margin-left: 15px;
+    color: black;
+}
+
+.hero{
+    height: 100vh;
+    background-color: rgb(255, 195, 72);
+    background-image: url(images/guitarstore.jpg);
+}
+.hero h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 60px;
 }
 
