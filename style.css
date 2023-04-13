@@ -33,11 +33,21 @@ nav a{
     height: 100vh;
     background-color: rgb(255, 195, 72);
     background-image: url(images/guitarstore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+.hero img{
+    opacity: 0.5;
+    width: 50%;
+    height: 50%;
 }
 .hero h1{
     display: flex;
-    justify-content: center;
-    padding-top: 10%;
+    padding-top: 20%;
     font-size: 60px;
+    color: white;
+    padding-left:10%;
 }
 
