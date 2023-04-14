@@ -157,12 +157,161 @@ nav i{
 }
 /* Finaliza products */
 
-.reviews {
-    height: 100vh;
+/* Seccion 4  */
+
+.reviews h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f53a50;
+
 }
-.contact {
-    height: 100vh;
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
 }
+
+
+
+.card{
+    padding: 5px;
+    text-align: center;
+    
+    margin: 0px;
+    border: white;
+    
+}
+
+.miclase{
+    width: 10%;
+    border: none;
+    height: 50vh;
+
+}
+
+.card img{
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: 50px;
+    box-shadow: 3px 3px 8px rgb(90, 63, 63);
+}
+
+
+.color_estrellas{
+    color: rgb(90, 63, 63);
+}
+
+/* Seccion 4  */
+
+
+
+.seccion_Contact {
+
+    background-color: cadetblue;
+    height: 75vh;
+    padding: 90px;
+    font-family: 'Poppins';
+}
+
+.seccion_Contact > h2 {
+   
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-bottom: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+form {
+    padding: 0px 90px 0px 180px;
+    
+}
+
+.form_1 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 2px 30px 0px;
+}
+
+
+
+label > span {
+    color:#F53A50;
+
+}
+
+.sub_form1 > input {
+    padding: 13px 75px 13px 30px;
+
+}
+
+.form_2  {
+    padding: 13px 0px 20px 0px;
+    margin-left: 41vh;
+    }
+
+.form_2 > input {
+    padding: 10px 437px 13px 9px;
+    
+
+}
+
+.form_3 {
+    justify-content: left;
+    padding:10px 0px 20px 100px;
+    margin-left: 30vh;
+}
+
+.form_3 > input {
+    padding: 13px 435px 150px 10px;
+    margin-right: 0px;
+}
+
+label {
+    display: block;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+input {
+    margin-right: 60px;
+    box-shadow: 1px 1px 8px  rgb(60, 33, 24);
+    border: none;
+    border-radius: 7px;
+}
+
+.boton_contact {
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+.boton_contac > button {
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 15px 65px 15px 65px;
+    background-color: white;
+    border: 2px solid rgb(60, 33, 24);
+    border-radius: 9px;
+    color: rgb(60, 33, 24);
+    transition: 0.2s ;
+    cursor: pointer;
+}
+
+
+footer{
+    height: 50vh;
+    
+}
+
 
 
 
