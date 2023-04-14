@@ -123,7 +123,7 @@
     
 <div class="contenedor">
 
-    <div class="card " style="width: 18rem;">
+    <div class="card miclase " style="width: 18rem;">
         <img src="images/reseña1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">Laura González</h2>
@@ -142,7 +142,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card miclase" style="width: 18rem;">
         <img src="images/reseña2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">Carlos Monzon</h2>
@@ -176,45 +176,29 @@
 
      <!-- Comienza el seccion 5 -->
 
-     <section class="seccion_Contact" id="Contact">
-
-        <h2>Contactenos</h2>
-
-        <form>
-            <div class="form_1">
-                <div class="sub_form1">
-                    <label>Nombre Completo <span>*</span></label>
-                    <input type="text" required placeholder="Ingrese su nombre">
+     
+      <section class="contacto">
+        <form action="" class="formulario">
+            <h1>Contactenos</h1>
+            <div class="pegados">
+                <div class="abajo">
+                    <label for="">Nombre</label>
+                    <input type="text" autocomplete="none" placeholder="Ingrese su nombre">
                 </div>
-                
-                <div class="sub_form1">
-                    <label>Email <span>*</span></label>
-                    <input type="email" required placeholder="Ingrese su email">
+                <div class="abajo">
+                    <label for="">Email<span> *</span></label>
+                    <input type="email" required autocomplete="none" placeholder="Ingrese su email">
                 </div>
             </div>
-
-            <div class="form_2">
-                <label>Asunto <span>*</span></label>
-                <input type="text" required placeholder="Asunto">
+            <div class="abajo">
+                <label for="">Asunto</label>
+                <input type="text" autocomplete="none" placeholder="Asunto">
+                <label for="">Mensaje</label> 
+                <input class="grande" type="text" id="" placeholder="Ingrese su mensaje">
+                <button>Enviar</button>
             </div>
-
-            <div class="form_3">
-                <label>Mensaje <span>*</span></label>
-                <input type="text" required placeholder="Ingrese su mensaje">
-            </div>
-            
-            <div class="boton_contact">
-                <a href="" class="boton_contac">
-                    <button>Enviar</button>
-                </a>
-            </div>
-           
-                
-            
         </form>
-
-    </section>
-
+</section>
 
     <!-- Finaliza el seccion 5 -->
 </main>
