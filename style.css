@@ -194,15 +194,17 @@ nav i{
 
 .reviews{
     height: 130vh;
+    background-image: linear-gradient(to left, #da923e, #3c2118);
+    z-index: 1;
 }
 .reviews h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 35px;
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #f53a50;
+    color: rgb(90, 63, 63);
 
 }
 .contenedor{
@@ -212,18 +214,18 @@ nav i{
     
 }
 .card{
-    padding: 5px;
-    text-align: center;
-    z-index: -1;
+
+    z-index: 0;
     margin: 0px;
     border: white;
     
 }
 
 .miclase{
-    width: 10%;
+    
     border: none;
     height: 50vh;
+    background: content-box;
 }
 .card img{
     border-radius: 10px;
@@ -234,7 +236,7 @@ nav i{
 }
 
 .color_estrellas{
-    color: rgb(90, 63, 63);
+    color: #3c2118;
 }
 
 /* Seccion 4  */
@@ -476,6 +478,19 @@ footer i:hover{
     
 }
 @media(max-width:600px){
+     
+    .aboutowners{
+        flex-direction: column;
+    }
+    .productstop{
+        flex-direction: column;
+    }
+
+    .takaminediv, .yamahadiv, .gibsondiv, .fenderdiv{
+        margin: 5px auto;
+        width: 40%;
+    }
+
     .aboutus{
         height: 85vh;
     }
@@ -494,6 +509,25 @@ footer i:hover{
     .contacto{
         background-size: 100vh;
     }
+
+    .productsbot{
+        flex-direction: column;
+    }
+
+    .contenedor div .card{
+        flex-direction: column;
+    }
+ 
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .card{
+        padding: 6px;
+        text-align: center;
+        margin: 50px auto;
+    }
+    
 }
 @media(max-width:550px){
     .hero h1{
