@@ -36,9 +36,48 @@ nav a{
     color: white;
     font-size: 20px;
     -webkit-text-stroke: black 0.5px;
+    font-weight: 700;
 }
 nav i{
     display: none;
+    -webkit-text-stroke: black 0.5px;
+    font-weight: 700;
+    
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    z-index: 1;
+    background-color: rgba(8, 0, 26, 0.215);
+    padding-right: 5%;
+
+    border: 1px solid rgba(0, 0, 0, 0.383);
+  }
+  
+  #menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    -webkit-text-stroke: black;
+  }
+  
+  #menu li a:hover {
+    background-color: #f2f2f2;
+  }
+  nav button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 /* Finaliza header */
 
@@ -47,7 +86,7 @@ nav i{
 .hero{
     height: 100vh;
     background-color:rgb(255, 195, 72);
-    background-image: url(images/guitarstore.jpg);
+    background-image: url(images/guitarstore4.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -156,7 +195,6 @@ nav i{
 .reviews{
     height: 130vh;
 }
-
 .reviews h1{
     display: flex;
     justify-content: center;
@@ -167,16 +205,12 @@ nav i{
     color: #f53a50;
 
 }
-
 .contenedor{
     display: flex;
     justify-content: space-around;
     padding: 25px;
     
 }
-
-
-
 .card{
     padding: 5px;
     text-align: center;
@@ -190,9 +224,7 @@ nav i{
     width: 10%;
     border: none;
     height: 50vh;
-
 }
-
 .card img{
     border-radius: 10px;
     font-size: 50px;
@@ -201,11 +233,9 @@ nav i{
     z-index: 1;
 }
 
-
 .color_estrellas{
     color: rgb(90, 63, 63);
 }
-
 
 /* Seccion 4  */
 
@@ -213,7 +243,11 @@ nav i{
 
 .contacto{
     height: 110vh;
-    background-color: aqua;
+    background-color: #c7c7c7;
+    background-image: url(images/contactbg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 /*es el tamaño y centrado del formulario*/
 .formulario{
@@ -303,26 +337,73 @@ nav i{
     color: rgb(90, 63, 63);
 }
 
-
+/* footer inicio */
 footer{
-    height: 10vh;
+    height: 15vh;
+    background-color: black;
+}
+.iconosfoot{
+    display: flex;
+    justify-content: center;
+}
+.iconosfoot a{
+    margin-left: 3%;
+    color: white;
+    margin-top: 3%; 
+}
+.iconosfoot i{
+    font-size: 20px;
+}
+/* footer final */
+
+
+/* animaciones */
+nav a:hover{
+    color:#ffc348;
+    font-size: 25px;
+}
+nav a{
+    transition: font-size, 0.2s;
 }
 
+.verdiv a:hover{
+    color: black;
+
+}
+.verdiv a{
+    transition: color, 0.6s;
+}
+footer a:hover{
+    color: #ffc348;
+}
+footer i:hover{
+    font-size: 25px;
+}
+.footer i{
+    transition: color, 0.5s;
+}
+
+
+/*Comienza la responsividad en tablet*/
 @media(max-width:1400px){
     nav{
         margin-left: -38%;
     }
 }
-/*Comienza la responsividad en tablet*/
-@media(max-width:1023px) and (min-width:768px){
+@media(max-width:1023px) {
     nav a{
         display: none;
     }
     nav i{
         display: flex;
-        font-size: 30px;
+        font-size: 40px;
         color: white;
+        margin-left: 100%;
     }
+    .logo{
+        margin-left: -10%;
+    }
+
     .hero h1{
         margin-left: 15%;
     }
@@ -334,9 +415,18 @@ footer{
     input[type=email]{
         flex-direction: column;
     }
-
+    .hero{
+        background-image: url(images/guitarstore42.png);
+    }
+    footer{
+        height: 10vh;
+    }
 }
-
+@media(max-width: 887px){
+    .logo{
+        margin-left: 1%;
+    }
+}
 @media(max-width: 950px){
         .productstop{
         margin-top: 15%;
@@ -344,7 +434,11 @@ footer{
         .verdiv{
         margin-top: 10%;
         }
+        .contenedor div .card{
+            flex-direction: column;
+        } 
 }
+
 /* Finaliza la responsividad en tablet */
 
 
@@ -355,7 +449,7 @@ footer{
     }
     nav i{
         display: flex;
-        font-size: 30px;
+        font-size: 40px;
         color: white;
     }
     .products{
@@ -363,6 +457,9 @@ footer{
     }
     nav i{
         margin-left: -100%;
+    }
+    footer{
+        height: 8vh;
     }
 }
 @media(max-width:900px){
@@ -394,6 +491,9 @@ footer{
         font-size: 30px;
         padding-top: 20%;
     }
+    .contacto{
+        background-size: 100vh;
+    }
 }
 @media(max-width:550px){
     .hero h1{
@@ -413,4 +513,5 @@ footer{
         padding: 10px 10px;
         text-align: center;
     }
+    
 }
