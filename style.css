@@ -194,8 +194,9 @@ nav i{
 
 .reviews{
     height: 130vh;
-    background-image: linear-gradient(to left, #da923e, #3c2118);
+    /* background-image: linear-gradient(to left,#c7c7c7 ,#9f907c); */
     z-index: 1;
+    background-color: #9f907c;
 }
 .reviews h1{
     display: flex;
