@@ -385,6 +385,16 @@ footer i:hover{
     transition: color, 0.5s;
 }
 
+ .creadores{
+    padding-top: 17px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: white;
+    
+    margin-left: 73px;
+    }
+
 
 /*Comienza la responsividad en tablet*/
 @media(max-width:1400px){
@@ -423,6 +433,8 @@ footer i:hover{
     footer{
         height: 10vh;
     }
+
+   
 }
 @media(max-width: 887px){
     .logo{
